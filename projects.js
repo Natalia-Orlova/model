@@ -1,13 +1,14 @@
 "use strict";
 
 fetch("projects.json")
-    .then((response) => {
-        return response.json();
-    })
-    .then((projects) => {
-        const projectBox = document.querySelector('.projects__box');
-        projects.forEach(({item, img, name, desc}) => {
-            const projectEl = `
+  .then((response) => {
+    return response.json();
+  })
+  .then((projects) => {
+    const projectBox = document.querySelector(".projects__box");
+    projects
+      .forEach(({ item, img, name, desc }) => {
+        const projectEl = `
                 <div class="project">
                         <img class="${item}" src="${img}" alt="project_img">
                         <div class="project__desc">
@@ -21,7 +22,11 @@ fetch("projects.json")
                         
                 </div>
             `;
-            projectBox.insertAdjacentHTML("beforeend", projectEl);
-        });
+        projectBox.insertAdjacentHTML("beforeend", projectEl);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  });
 
-    })
+

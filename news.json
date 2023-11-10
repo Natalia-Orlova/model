@@ -1,0 +1,38 @@
+[
+    {   "id": 0,
+        "img": "img/news1.jpg",
+        "theme": "Kitchan Design",
+        "name": "Let’s Get Solution For Building Construction Work",
+        "date": "26 December,2022 "
+    },
+    {   "id": 1,
+        "img": "img/news2.jpg",
+        "theme": "Living Design",
+        "name": "Low Cost Latest Invented Interior Designing<br> Ideas",
+        "date": "22 December,2022 "
+    },
+    {   "id": 2,
+        "img": "img/news3.jpg",
+        "theme": "Interior Design",
+        "name": "Best For Any Office & Business Interior<br> Solution",
+        "date": "25 December,2022 "
+    },
+    {   "id": 3,
+        "img": "img/news4.jpg",
+        "theme": "Kitchan Design",
+        "name": "Let’s Get Solution For Building Construction Work",
+        "date": "26 December,2022 "
+    },
+    {   "id": 4,
+        "img": "img/news5.jpg",
+        "theme": "Living Design",
+        "name": "Low Cost Latest Invented Interior Designing<br> Ideas.",
+        "date": "22 December,2022 "
+    },
+    {   "id": 5,
+        "img": "img/news6.jpg",
+        "theme": "Interior Design",
+        "name": "Best For Any Office & Business Interior<br> Solution",
+        "date": "25 December,2022 "
+    }
+]
