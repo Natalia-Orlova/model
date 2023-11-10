@@ -522,6 +522,11 @@ li {
       font-weight: 400;
       line-height: 150%; /* 33px */
       letter-spacing: 0.22px;
+      transition: all 0.3s;
+    }
+
+    .blog-link:hover {
+      color: #c07d36;
     }
 
     .blog-link:not(:last-child)::after {
@@ -605,6 +610,18 @@ li {
       background-color: #f4f0ec;
       transition: all 0.3s;
     }
+
+    &_next svg path {
+      transition: all 0.3s;
+    }
+
+    &_next:hover {
+      background-color: #cda27442;
+    }
+
+    &_next:hover svg path {
+      stroke: #cda274;
+    }
   }
 }
 
@@ -626,6 +643,7 @@ li {
     border: 1px solid #e7e7e7;
     box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
     margin-bottom: 30px;
+    transition: all 0.3s;
 
     &_img {
       width: 100%;
@@ -693,22 +711,15 @@ li {
     &_next svg path {
       transition: all 0.3s;
     }
-
-    &_next:hover {
-      background-color: #cda27442;
-    }
-
-    &_next:hover svg path {
-      stroke: #cda274;
-    }
-
-    &_nextwhite {
-      background-color: #fff;
-    }
   }
 
-  &__item_colored {
+  &__item:hover{
     background: #f4f0ec;
+  }
+
+  &__item:hover .blog-news__item_next {
+      background-color: #fff;
+      transition: all 0.3s;
   }
 }
 
@@ -737,5 +748,20 @@ li {
     background-color: #fff;
     transition: all 0.3s;
     border: 1px solid #cda274;
+    transition: all 0.3s;
+  }
+
+  &__link:hover {
+    background-color: #F4F0EC;
+    border-color: #F4F0EC;
+    color: #c07d36;
+  }
+
+  &__link svg path {
+    transition: all 0.3s;
+  }
+
+  &__link:hover svg path {
+    stroke:#c07d36;
   }
 }

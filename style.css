@@ -457,6 +457,10 @@ li {
   font-weight: 400;
   line-height: 150%; /* 33px */
   letter-spacing: 0.22px;
+  transition: all 0.3s;
+}
+.banner__intro .blog-link:hover {
+  color: #c07d36;
 }
 .banner__intro .blog-link:not(:last-child)::after {
   content: " / ";
@@ -530,6 +534,15 @@ li {
   background-color: #f4f0ec;
   transition: all 0.3s;
 }
+.latest-post__post_next svg path {
+  transition: all 0.3s;
+}
+.latest-post__post_next:hover {
+  background-color: rgba(205, 162, 116, 0.2588235294);
+}
+.latest-post__post_next:hover svg path {
+  stroke: #cda274;
+}
 
 .blog-news {
   display: flex;
@@ -549,6 +562,7 @@ li {
   border: 1px solid #e7e7e7;
   box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
   margin-bottom: 30px;
+  transition: all 0.3s;
 }
 .blog-news__item_img {
   width: 100%;
@@ -609,17 +623,12 @@ li {
 .blog-news__item_next svg path {
   transition: all 0.3s;
 }
-.blog-news__item_next:hover {
-  background-color: rgba(205, 162, 116, 0.2588235294);
-}
-.blog-news__item_next:hover svg path {
-  stroke: #cda274;
-}
-.blog-news__item_nextwhite {
-  background-color: #fff;
-}
-.blog-news__item_colored {
+.blog-news__item:hover {
   background: #f4f0ec;
+}
+.blog-news__item:hover .blog-news__item_next {
+  background-color: #fff;
+  transition: all 0.3s;
 }
 
 .pagination {
@@ -646,4 +655,16 @@ li {
   background-color: #fff;
   transition: all 0.3s;
   border: 1px solid #cda274;
+  transition: all 0.3s;
+}
+.pagination__link:hover {
+  background-color: #F4F0EC;
+  border-color: #F4F0EC;
+  color: #c07d36;
+}
+.pagination__link svg path {
+  transition: all 0.3s;
+}
+.pagination__link:hover svg path {
+  stroke: #c07d36;
 }/*# sourceMappingURL=style.css.map */
