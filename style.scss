@@ -23,7 +23,7 @@ li {
 
 .header {
   margin-top: 53px;
-  margin-bottom: 57px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,7 +55,7 @@ li {
     }
 
     &_link:hover {
-      color:#CDA274;
+      color: #cda274;
     }
   }
 }
@@ -115,7 +115,7 @@ li {
     &_button svg path {
       transition: all 0.3s;
     }
-    
+
     &_button:hover {
       color: #000;
       background: #758494;
@@ -189,7 +189,7 @@ li {
         }
 
         .project__name:hover {
-          color:#CDA274;
+          color: #cda274;
         }
 
         .project__text {
@@ -221,11 +221,11 @@ li {
       }
 
       .next:hover {
-        background-color:#cda27442;
+        background-color: #cda27442;
       }
 
       .next:hover svg path {
-        stroke:#c07d36;
+        stroke: #c07d36;
       }
     }
   }
@@ -265,7 +265,7 @@ li {
   }
 
   &__item:not(:last-child) {
-    border-right: 1px solid #CDA274;
+    border-right: 1px solid #cda274;
     padding-right: 54px;
   }
 }
@@ -344,7 +344,7 @@ li {
       }
 
       &_title:hover {
-        color:#CDA274;
+        color: #cda274;
       }
 
       &_date {
@@ -382,7 +382,7 @@ li {
       }
 
       &_next:hover svg path {
-        stroke:#CDA274;
+        stroke: #cda274;
       }
 
       &_nextwhite {
@@ -426,7 +426,7 @@ li {
     }
 
     &_icon:hover svg path {
-      fill:#CDA274;
+      fill: #cda274;
     }
   }
 
@@ -454,7 +454,7 @@ li {
     }
 
     &_link:hover {
-      color:#CDA274;
+      color: #cda274;
     }
   }
 
@@ -464,7 +464,7 @@ li {
 
   &__contact {
     width: 21%;
-  
+
     &_title {
       color: #292f36;
       font-family: DM Serif Display;
@@ -483,6 +483,123 @@ li {
       font-weight: 400;
       line-height: 150%; /* 33px */
       letter-spacing: 0.22px;
+    }
+  }
+}
+
+// страница Blog
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 200px;
+
+  &__intro {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 503px;
+    padding: 41px 78px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 37px 37px 0px 0px;
+    background: #fff;
+
+    &_title {
+      color: #292f36;
+      font-family: DM Serif Display;
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 125%; /* 62.5px */
+    }
+
+    .blog-link {
+      color: #4d5053;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 150%; /* 33px */
+      letter-spacing: 0.22px;
+    }
+
+    .blog-link:not(:last-child)::after {
+      content: (" / ");
+    }
+  }
+}
+
+.latest-post {
+  margin-bottom: 156px;
+
+  &__title {
+    color: #292f36;
+    font-family: DM Serif Display;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 125%; /* 62.5px */
+    letter-spacing: 1px;
+    margin-bottom: 27px;
+  }
+
+  &__post {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+
+    &_img {
+      border-radius: 50px;
+    }
+
+    &_content {
+      max-width: 39%;
+    }
+
+    &_title {
+      color: #292f36;
+      font-family: DM Serif Display;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 125%; /* 31.25px */
+      letter-spacing: 0.5px;
+      margin-bottom: 22px;
+    }
+
+    &_text {
+      color: #4d5053;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 150%; /* 33px */
+      letter-spacing: 0.22px;
+      margin-bottom: 41px;
+    }
+
+    &_date {
+      display: flex;
+      width: 100%;
+      height: 33px;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    &_datetext {
+      color: #4d5053;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+      letter-spacing: 0.16px;
+      text-transform: capitalize;
+    }
+
+    &_next {
+      width: 52px;
+      height: 52px;
+      padding: 15px 20px;
+      border-radius: 50%;
+      background-color: #f4f0ec;
+      transition: all 0.3s;
     }
   }
 }
