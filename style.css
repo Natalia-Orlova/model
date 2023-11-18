@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -10,10 +11,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-li {
-  list-style-type: none;
 }
 
 .center {
@@ -210,6 +207,7 @@ li {
   background-color: #f4f0ec;
   padding: 150px;
   margin-bottom: 96px;
+  list-style-type: none;
 }
 .counter__item {
   text-align: center;
@@ -658,8 +656,8 @@ li {
   transition: all 0.3s;
 }
 .pagination__link:hover {
-  background-color: #F4F0EC;
-  border-color: #F4F0EC;
+  background-color: #f4f0ec;
+  border-color: #f4f0ec;
   color: #c07d36;
 }
 .pagination__link svg path {
@@ -667,4 +665,135 @@ li {
 }
 .pagination__link:hover svg path {
   stroke: #c07d36;
+}
+
+.blog-details {
+  display: flex;
+  flex-direction: row;
+  gap: 57px;
+  margin-bottom: 60px;
+}
+.blog-details .article-item {
+  width: 800px;
+}
+.blog-details .article-item__heading {
+  color: #292f36;
+  font-family: DM Serif Display;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 125%; /* 62.5px */
+  letter-spacing: 1px;
+  margin-bottom: 21px;
+}
+.blog-details .article-item__img {
+  border-radius: 50px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.blog-details .article-item__edition {
+  display: flex;
+  justify-content: space-between;
+  color: #4d5053;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.16px;
+  margin-bottom: 48px;
+}
+.blog-details .article-item__edition_link {
+  color: #4d5053;
+}
+.blog-details .article-item__edition_link:not(:last-child)::after {
+  content: " / ";
+}
+.blog-details .article-item__text {
+  color: #4d5053;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 150%; /* 33px */
+  letter-spacing: 0.22px;
+  margin-bottom: 35px;
+}
+.blog-details .article-item__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 44px;
+  list-style-type: none; /* Убираем исходные маркеры */
+  counter-reset: my-counter; /* Задаём имя счетчика */
+}
+.blog-details .article-item__list_li {
+  color: #4d5053;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 150%; /* 33px */
+  letter-spacing: 0.22px;
+}
+.blog-details .article-item__list_li::before {
+  content: counter(my-counter); /* Выводим число */
+  counter-increment: my-counter; /* Увеличиваем значение счётчика */
+  color: #cda274;
+  font-family: DM Serif Display;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 125%; /* 25px */
+  letter-spacing: 0.4px;
+  margin-right: 14px; /* Расстояние от цифры до текста */
+}
+.blog-details .quote {
+  display: flex;
+  width: 800px;
+  padding: 53px 227px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px;
+  background: #f4f0ec;
+  margin-bottom: 27px;
+}
+.blog-details .quote__text {
+  width: 350px;
+  color: #cda274;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 125%; /* 31.25px */
+  letter-spacing: 0.5px;
+}
+.blog-details .sidebar__heading {
+  color: #292f36;
+  font-family: DM Serif Display;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 125%; /* 31.25px */
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+}
+.blog-details .sidebar__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 335px;
+}
+.blog-details .sidebar__tags_link {
+  display: flex;
+  padding: 9px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #f4f0ec;
+  color: #292f36;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 125%; /* 22.5px */
+  letter-spacing: 0.36px;
+  transition: all 0.3s;
+}
+.blog-details .sidebar__tags_link:hover {
+  color: #fff;
+  background: #292f36;
 }/*# sourceMappingURL=style.css.map */

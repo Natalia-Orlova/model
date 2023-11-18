@@ -12,10 +12,6 @@ a {
   text-decoration: none;
 }
 
-li {
-  list-style-type: none;
-}
-
 .center {
   width: 1200px;
   margin: 0 auto;
@@ -239,6 +235,7 @@ li {
   background-color: #f4f0ec;
   padding: 150px;
   margin-bottom: 96px;
+  list-style-type: none;
 
   &__item {
     text-align: center;
@@ -713,13 +710,13 @@ li {
     }
   }
 
-  &__item:hover{
+  &__item:hover {
     background: #f4f0ec;
   }
 
   &__item:hover .blog-news__item_next {
-      background-color: #fff;
-      transition: all 0.3s;
+    background-color: #fff;
+    transition: all 0.3s;
   }
 }
 
@@ -752,8 +749,8 @@ li {
   }
 
   &__link:hover {
-    background-color: #F4F0EC;
-    border-color: #F4F0EC;
+    background-color: #f4f0ec;
+    border-color: #f4f0ec;
     color: #c07d36;
   }
 
@@ -762,6 +759,163 @@ li {
   }
 
   &__link:hover svg path {
-    stroke:#c07d36;
+    stroke: #c07d36;
+  }
+}
+
+// страница Blog Details
+
+.blog-details {
+  display: flex;
+  flex-direction: row;
+  gap: 57px;
+  margin-bottom: 60px;
+
+  .article-item {
+    width: 800px;
+
+    &__heading {
+      color: #292f36;
+      font-family: DM Serif Display;
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 125%; /* 62.5px */
+      letter-spacing: 1px;
+      margin-bottom: 21px;
+    }
+
+    &__img {
+      border-radius: 50px;
+      margin-bottom: 40px;
+      width: 100%;
+    }
+
+    &__edition {
+      display: flex;
+      justify-content: space-between;
+      color: #4d5053;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+      letter-spacing: 0.16px;
+      margin-bottom: 48px;
+
+      &_link {
+        color: #4d5053;
+      }
+
+      &_link:not(:last-child)::after {
+        content: (" / ");
+      }
+    }
+
+    &__text {
+      color: #4d5053;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 150%; /* 33px */
+      letter-spacing: 0.22px;
+      margin-bottom: 35px;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      margin-bottom: 44px;
+      list-style-type: none; /* Убираем исходные маркеры */
+      counter-reset: my-counter; /* Задаём имя счетчика */
+
+      &_li {
+        color: #4d5053;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 150%; /* 33px */
+        letter-spacing: 0.22px;
+      }
+
+      &_li::before {
+        content: counter(my-counter); /* Выводим число */
+        counter-increment: my-counter; /* Увеличиваем значение счётчика */
+        color: #cda274;
+        font-family: DM Serif Display;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 125%; /* 25px */
+        letter-spacing: 0.4px;
+        margin-right: 14px; /* Расстояние от цифры до текста */
+      }
+    }
+  }
+
+  .quote {
+    display: flex;
+    width: 800px;
+    padding: 53px 227px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    background: #f4f0ec;
+    margin-bottom: 27px;
+
+    &__text {
+      width: 350px;
+      color: #cda274;
+      text-align: center;
+      font-family: DM Serif Display;
+      font-size: 24px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 125%; /* 31.25px */
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .sidebar {
+    &__heading {
+      color: #292f36;
+      font-family: DM Serif Display;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 125%; /* 31.25px */
+      letter-spacing: 0.5px;
+      margin-bottom: 24px;
+    }
+
+    &__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      width: 335px;
+
+      &_link {
+        display: flex;
+        padding: 9px 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: none;
+        border-radius: 10px;
+        background: #f4f0ec;
+
+        color: #292f36;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 125%; /* 22.5px */
+        letter-spacing: 0.36px;
+        transition: all 0.3s;
+      }
+
+      &_link:hover {
+        color: #fff;
+        background: #292f36;
+      }
+    }
+
+    .active {
+      color: #fff;
+      background: #292f36;
+    }
   }
 }
