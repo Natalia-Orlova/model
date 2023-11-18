@@ -104,16 +104,10 @@ Vue.component("articles", {
     };
   },
   methods: {
-    activeBtn() {
-      if (isActive) {
-
-      }
-    },
     filterArticles(e) {
       this.sortedArticle = this.articles.filter((article) =>
           article.id === e.target.id
         );
-
     },
   },
 
