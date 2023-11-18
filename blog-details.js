@@ -30,7 +30,7 @@ Vue.component("articles", {
         },
         {
           id: "bedroom",
-          title: "Let’s Get Solution for Building Construction Work",
+          title: "Low Cost Latest Invented Interior Designing Ideas.",
           src: "img/top_photo.jpg",
           alt: "article_img",
           date: "26 December,2022",
@@ -41,7 +41,7 @@ Vue.component("articles", {
         },
         {
           id: "building",
-          title: "Let’s Get Solution for Building Construction Work",
+          title: "Best For Any Office & Business Interior Solution",
           src: "img/news2.jpg",
           alt: "article_img",
           date: "26 December,2022",
@@ -63,7 +63,7 @@ Vue.component("articles", {
           },
           {
             id: "kitchen-planning",
-            title: "Let’s Get Solution for Building Construction Work",
+            title: "Low Cost Latest Invented Interior Designing Ideas.",
             src: "img/news1.jpg",
             alt: "article_img",
             date: "26 December,2022",
